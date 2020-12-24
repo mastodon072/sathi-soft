@@ -213,50 +213,42 @@
 					<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 					</button>
-
-
+					
 					<?php
-					wp_nav_menu(array(
-						'theme_location'    => 'primary',
-						'container'       => 'div',
-						'container_id'    => 'main-nav navbarSupportedContent',
-						'container_class' => 'collapse navbar-collapse justify-content-end',
-						'menu_id'         => false,
-						'menu_class'      => 'navbar-nav',
-						'depth'           => 3,
-						'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-						'walker'          => new wp_bootstrap_navwalker()
-					));
+						wp_nav_menu(array(
+							'theme_location'    => 'primary',
+							'container'       	=> 'div',
+							'container_id'    	=> 'navbarSupportedContent',
+							'container_class' 	=> 'collapse navbar-collapse justify-content-end',
+							'menu_id'         	=> false,
+							'menu_class'      	=> 'navbar-nav mr-auto',
+							'depth'           	=> 3,
+							'items_wrap'		=> '<ul class="navbar-nav mr-auto">%3$s</ul>', 
+							'fallback_cb'     	=> 'wp_bootstrap_navwalker::fallback',
+							'walker'          	=> new WP_Bootstrap_Navwalker()
+						));
 					?>
 
 				</nav>
-				<?php get_search_form(); ?>
-
-
 			</div>
 		</div>
 	</nav>
 	<!-- menuend -->
-
-
-
-	<!--
-		<div class="collapse search-form-container" id="collapseExample">
-			<div class="card card-body">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<form action="submit" class="form-inline" id="form">
-								<div class="form-inline__group">
-									<input type="search" id="search" class="form-inline__input" placeholder="Insert Your Query" required>
-									<button type="submit" class="btn--search" placeholder="" value=""><i class="fas fa-search"></i></button>
-								</div>
-							</form>
-						</div>
-
+	<div class="collapse search-form-container" id="collapseExample">
+		<div class="card card-body">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<form action="<?php echo home_url();?>" class="form-inline" id="form">
+							<div class="form-inline__group">
+								<input type="search" id="search" class="form-inline__input" placeholder="Insert Your Query" name="s" required>
+								<button type="submit" class="btn--search" placeholder="" value=""><i class="fas fa-search"></i></button>
+							</div>
+						</form>
 					</div>
-				</div>
 
+				</div>
 			</div>
+
 		</div>
--->
+	</div>

@@ -73,37 +73,16 @@ svg.svg-inline--fa.fa-star.checked {
     color: #b4adb4;
 }
 
-.nav-item.dropdown.menu-has-children:after {
-    display: inline-block;
-    color: #fff;
-    font-size: 18px;
-    vertical-align: middle;
-    position: absolute;
-    top: 42%;
-    right: 3px;
-    padding-top: 14px;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-bottom: 0;
-    border-left: .3em solid transparent;
-    }
-
-
 
 ul.dropdown-menu.show {
     width: max-content;
 }
 
-.site-navigation .dropdown .nav-link {
-    padding: 1.3rem 22px 1.3rem 5px !important;
-}
-
-@media (max-width: 991px) {
-  nav.site-navigation {
-    display: none;
-    } }
-    
+.navbar-toggler {
+    &:focus {
+        outline: none;
+    }
+}  
     
     
     

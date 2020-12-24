@@ -468,14 +468,6 @@ function add_additional_class_on_li($classes, $item, $args)
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
-add_filter('nav_menu_link_attributes', 'wpse156165_menu_add_class', 10, 3);
-
-function wpse156165_menu_add_class($atts, $item, $args)
-{
-	$class = 'nav-link'; // or something based on $item
-	$atts['class'] = $class;
-	return $atts;
-}
 
 add_filter('nav_menu_css_class', 'v123_nav_class', 10, 2);
 function v123_nav_class($classes, $item)
@@ -484,4 +476,16 @@ function v123_nav_class($classes, $item)
 		$classes[] = 'dropdown menu-has-children';
 	}
 	return $classes;
+}
+
+
+add_filter( 'wp_nav_menu_items', 'sathisoft_add_srearch', 10, 2 );
+function sathisoft_add_srearch( $items, $args ) {
+	$items .= '<li class="nav-item">';
+	$items .= '<button class="search-btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">';
+	$items .= '<i class="fas fa-search"></i>';
+	$items .= '</button>';
+	$items .= '</li>';
+	
+    return $items;
 }

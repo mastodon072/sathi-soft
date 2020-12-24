@@ -8,8 +8,14 @@
 
     .nav-item{
         border-right: solid 1px $color-dark-blue;
+        @include respond(tab-port){
+            border: 0;
+        }
         &:first-child{
             border-left: solid 1px $color-dark-blue;
+            @include respond(tab-port){
+                border: 0;
+            }
         }
     }
 

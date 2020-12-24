@@ -385,13 +385,11 @@ svg.svg-inline--fa.fa-star.checked{color:#d8bb21}
 .pagination>li:first-child>a,.pagination>li:first-child>span,.pagination>li:last-child>a,.pagination>li:last-child>span{border-radius:0}
 .result_pagination .pagination li+li{margin:0 10px;display:inline-block}
 .gal_excerpt p{color:#b4adb4}
-.nav-item.dropdown.menu-has-children:after{display:inline-block;color:#fff;font-size:18px;vertical-align:middle;position:absolute;top:42%;right:3px;padding-top:14px;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}
 ul.dropdown-menu.show{width:-webkit-max-content;width:-moz-max-content;width:max-content}
-.site-navigation .dropdown .nav-link{padding:1.3rem 22px 1.3rem 5px !important}
+.navbar-toggler:focus{outline:0}
 .searchform input[type=text]{width:103px;-webkit-box-sizing:border-box;box-sizing:border-box;border:0 solid #155995;border-radius:0;font-size:16px;background-color:#155995;background-image:url("searchicon.png");background-position:10px 10px;background-repeat:no-repeat;padding:12px 10px 12px 10px;-webkit-transition:width .4s ease-in-out;transition:width .4s ease-in-out;color:#fff}
 :focus{outline:-webkit-focus-ring-color auto 0}
-@media(max-width:991px){nav.site-navigation{display:none}
-}@media only screen and (max-width:600px){.section__pagination .items-list{grid-template-columns:repeat(2,1fr)}
+@media only screen and (max-width:600px){.section__pagination .items-list{grid-template-columns:repeat(2,1fr)}
 }@media(max-width:75em){html{font-size:56.25%}
 .heading-primary__main{font-size:2.6rem}
 .paragraph{font-size:15px;line-height:1.7}
@@ -430,6 +428,8 @@ nav.navbar.navbar-expand-lg{width:100%}
 .accessibility-font{padding:0 1rem}
 .accessibility-font__item:not(:last-child){margin-right:2rem}
 .accessibility.float-right{float:none !important}
+.site-navigation .nav-item{border:0}
+.site-navigation .nav-item:first-child{border:0}
 .carousel-content{width:65%}
 .news-item{padding:.75rem .5rem 1rem 1}
 .news-item{height:13rem}
