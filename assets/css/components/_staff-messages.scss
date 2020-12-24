@@ -1,0 +1,71 @@
+.staff-message{
+
+    .card-neo{
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 34rem;
+        padding: 4rem 0 0 0;
+
+        @include respond(tab-land){
+            padding: 3rem 1rem 1rem 1rem;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+            height: 39rem;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        width: 100%;
+        background-color: $color-primary-blue;
+        top: 0px;
+        left: 0;
+        text-align: center;
+        font-size: 1.4rem;
+        color: $color-primary-white;
+        border-bottom: solid 2px $color-primary-red;
+        padding: 2rem 0 1.5rem 0;
+        font-family: 'sf_semibold', sans-serif;
+        text-transform: uppercase;
+
+        @include respond(tab-land){
+            text-transform: none;
+        }
+    }
+
+    .imgBx{
+        text-align: center;
+        top: 3rem;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        border: solid 2px $color-primary-blue;
+
+        @include respond(tab-land){
+            width: 90px;
+            height: 90px;
+        }
+        
+
+
+        img{
+            text-align: center;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .contentBx{
+        position: relative;
+        top: 3rem;
+    }
+
+    
+}

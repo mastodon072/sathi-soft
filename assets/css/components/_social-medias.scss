@@ -1,0 +1,31 @@
+.social-medias{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &__item{
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited{
+        color: $color-primary-white;
+        text-decoration: none;
+        transition: .2s all;
+
+    &:hover,
+    &:active{
+        color: $color-light-grey-2;
+    }
+
+        i{
+            font-size: 1.3rem;
+            color: inherit;
+        }
+    }
+
+}

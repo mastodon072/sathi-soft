@@ -1,0 +1,45 @@
+.inner-page-banner{
+    padding: 3rem 0;
+    background-color: $color-dark-white;
+
+    &__heading {
+        font-size: 32px;
+        font-family: 'sf_semibold';
+        color: $color-primary-blue;
+
+    }
+
+    &__breadcurmbs{
+
+        .breadcrumb{
+            background-color: transparent;
+            @include respond(phone){
+                float: none!important;
+            }
+        }
+
+        .breadcrumb-item{
+            color: $color-primary-blue;
+            font-family: 'sf_medium';
+            font-size: 16px;
+            
+
+            a,
+            a:link,
+            a:visited{
+                color: inherit;
+                transition: all .3s;
+                text-decoration: none;
+            }
+
+            a:hover,
+            a:active{
+                color: $color-dark-blue;
+            }
+        }
+
+        .breadcrumb-item.active{
+            color: $color-light-grey-1;
+        }
+    }
+}

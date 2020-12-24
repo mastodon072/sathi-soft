@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 0;
+
+
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        height: 10rem;
+        width: auto;
+        overflow: hidden;
+
+
+        img{
+            height: 100%;
+            object-fit: cover;
+            margin-right: 1rem;
+
+            @include respond(tab-land){
+                height:  90%;
+            }
+
+            @include respond(phone){
+                height:  80%;
+            }
+        
+        }
+    }
+
+    &__nepal-map{
+
+        @include respond(tab-land){
+            height: 90%;
+        }
+
+        @include respond(phone){
+            height:  80%;
+        }
+    
+
+    }
+}
+

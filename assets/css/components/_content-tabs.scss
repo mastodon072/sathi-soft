@@ -1,0 +1,97 @@
+.content-tab{
+
+  padding: 0rem 4rem 0 0;
+
+  @include respond(phone){
+    padding: 0rem 0rem 0 0;
+}
+
+  .nav-tabs {
+    border-bottom: 1px solid $color-dark-white;
+  }
+
+  .nav-tabs .nav-link{
+    border: 3px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: $color-dark-white;
+    font-family: 'sf_regular', sans-serif;
+    color: $color-primary-black;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 1rem 2.5rem;
+
+      @include respond(tab-land){
+        font-size: 13px;
+        padding: 1rem 2.5rem;
+    }
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active{
+    color: $color-primary-blue;
+    font-family: 'sf_regular';
+    border-top: solid 3px $color-primary-blue;
+  }
+
+  .svg-inline--fa {
+    margin-right: 10px;
+}
+
+.tab-content {
+  padding: 2rem 0;
+  max-height: 90rem;
+  min-height: 50rem;
+}
+
+.tab-pane{
+
+  &__footer{
+    padding: 2rem;
+  }
+}
+
+
+
+  // Code For making Tab Responsive
+  .tabbable-responsive {
+    display: block;
+    min-width: 100%;
+    overflow-x: auto;
+  }
+
+  .tabbable {
+      min-width: 100%;
+      
+      .nav-tabs {
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 100%;
+        
+        .nav-item {
+          display: inline-block;
+          
+          .nav-link {
+            display: inline-block;
+          }
+        }
+      }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

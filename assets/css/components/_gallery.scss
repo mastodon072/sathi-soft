@@ -1,0 +1,74 @@
+.galleries{
+    margin-top: 4rem;
+}
+
+.gallery{
+    width: 265px!important;
+    display: block;
+    margin: 0 1rem;
+    padding: 2rem;
+    background-color: $color-primary-white;
+    border-bottom: solid 2px $color-primary-red;
+    box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    min-height: 430px;
+    border-radius: 20px;
+
+    @include respond(tab-port){
+        width: 100%!important;
+    }
+    
+
+
+    &:hover{
+        box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+        text-decoration: none;
+    }
+
+    &__img-box{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+        height: 220px;
+    }        
+    
+    &__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+       
+
+    &__excerpt{
+        padding: 1.5rem 0 2rem 0;
+        text-decoration: none;
+    }
+
+    &__name{
+        text-decoration: none;
+        color: $color-primary-blue;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        font-family: 'sf_medium', sans-serif;
+        text-transform: uppercase;
+    }
+
+    &__description{
+        margin-bottom: 0;
+        color: $color-light-grey-1;
+        font-size: 13px;
+    }
+
+    &__photos-no{
+        display: block;
+    }
+
+    &__upload-date{
+        display: block;
+    }
+}
+
+.gallery-archive{
+    padding: 5rem 0 7rem 0;
+}

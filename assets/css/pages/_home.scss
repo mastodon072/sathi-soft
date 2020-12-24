@@ -1,0 +1,71 @@
+.section-top{
+    width: 100%;
+    background-color: $color-primary-blue;
+    
+
+    .col-md-6{
+        padding: 3px 0;
+    }
+}
+
+.section-quick-links{
+    padding: 6rem 0;
+
+    @include respond(tab-land){
+        padding: 4rem 0;
+    }
+}
+
+.section-aboutus{
+    padding: 10rem 0;
+    background-color: $color-dark-white;
+
+    @include respond(tab-land){
+        padding: 6rem 0;
+    }
+
+    &__img-box{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__text-content{
+        padding-left: 3rem;
+
+    }
+}
+
+.main-content{
+    padding: 10rem 0;
+
+    @include respond(tab-land){
+        padding: 6rem 0;
+    }
+}
+
+
+
+.section-testimonials{
+    padding: 8rem 0;
+    background-color: $color-dark-white;
+
+
+}
+
+.section-gallery{
+    padding: 8rem 0;
+    background-color: $color-primary-white;
+
+    @include respond(tab-land){
+        padding: 4rem 0;
+        height: 540px;
+        overflow: hidden;
+    }
+}
+
+

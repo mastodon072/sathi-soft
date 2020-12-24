@@ -1,0 +1,136 @@
+footer.footer ul li a {
+    color: #fafafa;
+}
+svg.svg-inline--fa.fa-star.checked {
+    color: #d8bb21;
+}
+
+.section-aboutus__text-content p, .news-detail__body p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.form__radio-input {
+    display: inline-block !important;
+}
+
+.form__radio-input input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.5em;
+}
+
+/*pagination*/
+/*pagination style*/
+
+.pagination_name {
+  clear:both;
+  padding:0px 0px;
+  position:relative;
+  font-size:14px;
+  line-height:14px;
+      bottom: 10px;
+          margin-top: 50px;
+}
+
+.pagination_name span, .pagination_name a {
+  display:block;
+  float:left;
+  margin: 2px 5px 2px 0;
+  padding: 11px 24px;
+  text-decoration:none;
+  width:auto;
+  color:#fff;
+  background: #b81d23;
+}
+
+.pagination_name a:hover{
+  color:#fff;
+  background: #152f90 ;
+}
+
+.pagination_name .current_name{
+
+  background: #152f90 ;
+  color:#fff;
+}
+
+.name-blog-navigation {
+ border-top: 1px solid #ddd;
+ padding-top: 4px;
+ margin-top: 12px;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span,.pagination>li:last-child>a, .pagination>li:last-child>span{border-radius:0;}
+.result_pagination .pagination li + li{
+ margin: 0 10px;
+ display: inline-block;
+}
+
+
+.gal_excerpt p {
+    color: #b4adb4;
+}
+
+.nav-item.dropdown.menu-has-children:after {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    vertical-align: middle;
+    position: absolute;
+    top: 42%;
+    right: 3px;
+    padding-top: 14px;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    }
+
+
+
+ul.dropdown-menu.show {
+    width: max-content;
+}
+
+.site-navigation .dropdown .nav-link {
+    padding: 1.3rem 22px 1.3rem 5px !important;
+}
+
+@media (max-width: 991px) {
+  nav.site-navigation {
+    display: none;
+    } }
+    
+    
+    
+    
+    
+/*searchbox*/
+
+.searchform input[type=text] {
+  width: 103px;
+  box-sizing: border-box;
+  border: 0px solid #155995;
+  border-radius: 0px;
+  font-size: 16px;
+  background-color: #155995;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 10px 12px 10px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+      color: #fff;
+
+}
+
+.searchform input[type=text]:focus {
+  
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+

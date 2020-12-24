@@ -1,0 +1,51 @@
+.banner-slider{
+    .carousel-item{
+        height: 80vh;
+        overflow: hidden;
+        width: 100vw;
+
+        @include respond(tab-land){
+            height: 65vh;
+        }
+    }
+    .carousel-img{
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+.carousel-inner{
+    position: relative;
+}
+
+.carousel-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    background-color: rgba($color-primary-blue,0.8);
+    color: $color-primary-white;
+    padding: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    border-bottom: solid 3px $color-primary-red;
+
+    @include respond(tab-port){
+        width: 65%;
+    }
+}
+.carousel-icon-bg-right{
+    background-color: $color-primary-blue;
+    padding: 1rem 1rem 5px 1.5rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.carousel-icon-bg-left{
+    background-color: $color-primary-blue;
+    padding: 1rem 1.5rem 5px 1rem;
+    display: inline-block;
+    border-radius: 50%;
+}

@@ -1,0 +1,83 @@
+.section-faq {
+    margin: 50px 0;
+  }
+  
+  .section-faq #faq .card {
+    margin-bottom: 30px;
+    border: 0;
+  }
+  
+  .section-faq #faq .card .card-header {
+    position: relative;
+    border: 0;
+    -webkit-box-shadow: 0 3px 6px rgba(53, 53, 53, 0.13), 0 3px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 6px rgba(53, 53, 53, 0.13), 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0;
+  }
+
+  .section-faq #faq .card .card-header .fa-angle-down{
+    position: absolute;
+    top: 44%;
+    right: 2rem;
+    color: $color-primary-blue;
+  }
+  
+    .section-faq #faq .card .card-header .btn-header-link {
+      display: block;
+      white-space: normal;
+      text-align: left;
+      background: $color-light-grey-2;
+      color: $color-primary-blue;
+      padding: 3rem;
+      font-size: 2.2rem;
+      border-bottom: solid 1px $color-dark-white;
+      font-family: 'sf_regular', sans-serif;
+      @include respond(tab-land){
+        padding-right: 5rem;
+    }
+  }
+
+  .section-faq #faq .card .card-header .btn-header-link:focus{
+    outline: 0;
+    box-shadow: none;
+  }
+  
+  
+  .section-faq #faq .card .card-header .btn-header-link.collapsed {
+    background: $color-dark-white;
+    color: $color-primary-blue;
+  }
+  
+
+  .section-faq #faq .card .collapsing {
+    background: $color-light-grey-2;
+    line-height: 30px;
+  }
+  
+  .section-faq #faq .card .collapse {
+    border: 0;
+  }
+  
+  .section-faq #faq .card .collapse.show {
+    background: $color-light-grey-2;
+    color: $color-primary-blue;
+    line-height: 2;
+    font-size: 1.7rem;
+    font-family: 'sf_medium', sans-serif;
+  }
+
+  #faq .card-body{
+    background: $color-light-grey-2;
+    color: $color-primary-blue;
+    line-height: 2;
+    padding: 3rem;
+    font-size: 1.7rem;
+    font-family: 'sf_medium', sans-serif;
+        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13), 0 3px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13), 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+  }

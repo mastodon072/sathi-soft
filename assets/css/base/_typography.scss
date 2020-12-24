@@ -1,0 +1,101 @@
+.site-tagline{
+
+    &--primary-text{
+        display: block;
+        font-family: 'sf_regular', sans-serif;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &--secondary-text{
+        margin: 3px 0;
+        display: block;
+        font-family: 'sf_medium', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    &--tertiary-text{
+        color: $color-primary-red;
+        font-family: 'sf_medium', sans-serif;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+
+        @include respond(phone){
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.carousel-heading{
+    text-align: center;
+    font-family: 'sf_regular', sans-serif;
+    font-size: 3.8rem;
+}
+
+.carousel-paragraph{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'sf_medium', sans-serif;
+}
+
+.heading-primary{
+
+    &__secondary{
+        display: block;
+        font-family: 'sf_medium';
+        font-size: 1.5rem;
+        color: $color-primary-red;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+
+    &__main{
+        display: block;
+        color: $color-primary-blue;
+        font-size: 2.8rem;
+        font-family: 'sf_bold';
+        margin-bottom: 2rem;
+
+        @include respond(tab-land){
+            font-size: 2.6rem;
+        }
+    }   
+}
+
+.heading-secondary{
+    display: block;
+    color: $color-primary-blue;
+    font-size: 2.2rem;
+    font-family: 'sf_bold';
+    margin-bottom: 2rem;
+    
+}
+
+.paragraph{
+    font-size: 16px;
+    line-height: 1.9;
+    @include respond(tab-land){
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    &--quote{
+        color:$color-light-grey-1;
+        font-size: 1.5rem;
+        font-family: 'sf_regular', sans-serif;
+        line-height: 1.4;
+    }
+}
+
+.contact-text{
+    font-size: 12px;
+    color:$color-primary-red;
+    font-family: 'sf_medium';
+    text-align: left;
+    margin: 7px 0;
+}
+
+.svg-inline--fa {
+    margin-right: 10px;
+}

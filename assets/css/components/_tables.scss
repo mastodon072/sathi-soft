@@ -1,0 +1,24 @@
+.section-tables{
+    padding: 8rem 0;    
+    background-color: $color-primary-white;
+}
+
+.table{
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1);
+}
+
+.table .thead-dark th{
+    color: $color-primary-white;
+    background-color: $color-primary-blue;
+    border-color: $color-primary-blue;
+}
+
+.table td, .table th{
+    padding: 2rem;
+
+    @include respond(phone){
+        padding: .75rem;
+    }
+}

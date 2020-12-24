@@ -1,0 +1,84 @@
+.testimonials{
+    margin-top: 4rem;
+
+    .testimonial{
+        margin: 0 2rem;
+        padding: 40px 30px;
+        background:$color-primary-white;
+        border-radius: 35px;
+        box-shadow: -6px -6px 20px white, 6px 6px 20px rgba(0, 0, 0, 0.1);
+
+        &__excerpt{
+            display: flex;
+            align-items: center;
+        }
+
+        &__img-box{
+            height: 120px;
+            width: 120px;
+            overflow: hidden;
+            border: solid 2px$color-primary-blue;
+            border-radius: 50%;
+        }
+
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__user-details{
+            padding-left: 2rem;
+        }
+
+        &__user-name{
+            font-size: 18px;
+            color: $color-primary-black;
+            font-family: 'sf_semibold';
+            margin-bottom: 0px;
+        }
+
+        &__user-post{
+            font-size: 14px;
+            font-family: 'sf_regular';
+            text-transform: uppercase;
+            margin-bottom: 0px;
+        
+        }
+
+        &__user-ratings{
+
+            @include respond(tab-land){
+                font-size: 10px;
+            }
+        }
+
+        &__text{
+            padding: 2.5rem 0 0 0;
+            color:$color-light-grey-1;
+            font-family: 'sf_regular', sans-serif;
+        }
+    }
+
+}
+
+
+button.glider-next-testimonial,
+button.glider-prev-testimonial,
+button.glider-prev-gallery,
+button.glider-next-gallery {
+    
+    top: 48%;
+    font-size: 20px!important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $color-primary-white;
+    text-align: center;
+    vertical-align: middle;
+
+    @include respond(phone){
+        opacity: 0;
+        display: none;
+    }
+}

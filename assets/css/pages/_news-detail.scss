@@ -1,0 +1,40 @@
+.news-detail-content{
+    padding: 8rem 0;
+}
+
+.news-detail{
+    padding-right: 3rem;
+
+    &__header{
+        margin-bottom: 3rem;
+    }
+
+    &__heading{
+        color: $color-primary-blue;
+        font-size: 2.4rem;
+        line-height: 1.5;
+        font-family: 'sf_medium', sans-serif;
+        margin-bottom: 2rem;
+    }
+
+    &__metadata{
+        color: $color-light-grey-1;
+        font-size: 13px;
+    }
+
+    &__published-date{
+        margin-right: 2rem;
+    }
+
+    &__author{
+
+    }
+
+    &__body{
+
+    }
+
+    .btn--download{
+        margin-top: 5rem;
+    }
+}

@@ -1,0 +1,101 @@
+.news-section{
+
+    &__container{
+        padding: 0 1.5rem 0 0;
+    }
+}
+
+.news-item{
+
+    display: flex;
+    overflow: hidden;
+    height: 15rem;
+    align-items: baseline;
+    transition: .2s all;
+    padding: 2rem 1rem 2.5rem 0;
+    border-bottom: solid 2px $color-primary-white;
+
+    @include respond(tab-land){
+        padding: 1rem .75rem 2rem 1rem;
+    }
+
+    @include respond(tab-port){
+        padding: .75rem .5rem 1rem 1;
+    }
+    
+    @include respond(tab-port){
+        height: 13rem;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+    &:hover{
+        text-decoration: none;
+        height: 25rem;
+        background-color: $color-dark-white;
+    }
+
+    &__published-date{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: solid 1px $color-primary-white;
+        color: $color-light-grey-1;
+        font-size: 1.8rem;
+        font-family: 'sf_medium';
+
+    }
+
+    &__excerpt{
+        flex: 8;
+        white-space: normal;
+        overflow: hidden;
+        padding-left: 2rem;
+    }
+
+    &__heading{
+        font-size: 24px;
+        font-family: 'sf_medium', sans-serif;
+        color:$color-primary-red;
+        margin-bottom: 1.5rem;
+        @include respond(tab-land){
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        @include respond(phone){
+            font-size: 18px;
+        }
+    }
+
+    &__heading-link{
+        color: inherit;
+
+        &:hover{
+            color: inherit;
+        }
+    }
+
+    &__published-times-ago{
+        color:$color-primary-blue;
+        font-size: 13px;
+        font-family: 'sf_semibold', sans-serif;
+    }
+
+    &__footer-content{
+        display: flex;
+        padding-right: 5rem;
+        align-items: baseline;
+        justify-content: space-between;
+
+        @include respond(tab-land){
+            padding-right: 1rem;
+        }
+    
+        @include respond(tab-port){
+        
+        }
+    }
+}

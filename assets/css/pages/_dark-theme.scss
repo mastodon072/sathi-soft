@@ -1,0 +1,263 @@
+body.dark{
+
+    background-color: #272727;
+
+    .section-top{
+        background-color: #212121;
+    }
+
+    .accessibility-font {
+        border-right: solid 1px #4a4a4a;
+        border-left: solid 1px #4a4a4a;
+    }
+
+    .accessibility-date{
+        border-right: solid 1px #4a4a4a;
+    }
+
+    .accessibility-contrast{
+        border-right: solid 1px #4a4a4a;
+    }
+
+    .accessibility-languages{
+        border-right: solid 1px #4a4a4a;
+    }
+
+    .site-navigation{
+        background-color: #212121;
+    }
+
+    .site-navigation .nav-item.active .nav-link:link, .site-navigation .nav-link:hover, .site-navigation .nav-link:active{
+        background-color: #272727;
+    }
+
+    .site-navigation .nav-item:first-child{
+        border-left: solid 1px #4a4a4a;
+    }
+
+    .site-navigation .nav-item{
+        border-right: solid 1px #4a4a4a;
+    }
+
+    .site-navigation .dropdown-menu{
+        background-color: #212121;
+    }
+
+    .site-navigation .dropdown-item:focus, .site-navigation .dropdown-item:hover, .site-navigation .dropdown-item.active{
+        background-color: #272727;
+    }
+
+    .carousel-content{
+        background-color: #212121;
+    }
+
+    .carousel-icon-bg-right,
+    .carousel-icon-bg-left{
+        background-color: #212121;
+    }
+
+    .ticker-wrap{
+        background-color: #272727;
+    }
+
+    .container-card .card-neo{
+        background-color: #212121;
+        box-shadow: -5px -5px 20px #212121, 5px 5px 20px #141414;
+    }
+
+    .container-card .card-neo:hover{
+        box-shadow: inset -6px -6px 20px rgba(18, 18, 18, 0.8), inset 6px 6px 20px rgba(0, 0, 0, 0.6);
+
+    }
+
+    .section-quick-links {
+        padding: 6rem 0;
+        background-color: #212121;
+    }
+
+    .section-aboutus{
+        background-color: #272727;
+    }
+
+    .btn-main{
+        box-shadow: -4px -4px 15px #1d1d1d, 4px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-main:hover{
+        box-shadow: inset -4px -4px 10px rgba(0,0,0,0.5), inset 4px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .main-content {
+        background-color: #212121;
+    }
+
+    .staff-message__title {
+        background-color: #1d1d1d
+    }
+
+    .counter-cards {
+        background-color: #272727;
+    }
+
+    .content-tab .nav-tabs .nav-link{
+        background-color: #272727;
+    }
+
+    .content-tab .nav-tabs {
+        border-bottom: 1px solid#272727;
+    }
+    .nav-tabs {
+        border-bottom: 1px solid #272727;
+    }
+
+    .news-item {
+        border-bottom: solid 2px #292929;
+    }
+
+    .news-item:hover{
+        background-color: #292929;
+    }
+
+    .section-testimonials {
+        background: #212121;
+    }
+
+    .testimonials .testimonial {
+        background: #212121;
+        box-shadow: -6px -6px 20px #191919, 6px 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-gallery {
+        background-color: #272727;
+    }
+    
+    .gallery {
+        background-color: #212121;
+        box-shadow: -6px -6px 20px rgb(24, 24, 24), 6px 6px 20px rgba(34, 34, 34, 0.1);
+    }
+
+    .gallery:hover{
+        box-shadow: inset -6px -6px 20px rgba(18, 18, 18, 0.8), inset 6px 6px 20px rgba(0, 0, 0, 0.6);
+        text-decoration: none;
+    }
+
+    button.glider-next-testimonial, button.glider-prev-testimonial, button.glider-prev-gallery, button.glider-next-gallery{
+        background-color: #333;
+
+    }
+
+    .slick-prev, .slick-next{
+        background-color: #333;
+    }
+    
+    .footer {
+        background-color: #212121;
+        color: #b8b8b8;
+    }
+
+    .footer__bottom {
+        background-color: #191919;
+        width: 100%;
+        color: #adadad;
+        font-size: 13px;
+    }
+
+    .search-form-container .card-body{
+        background-color: #333;
+    }
+
+    .section-tables{
+        background-color: #212121;
+    }
+
+    .table{
+        box-shadow: -4px -4px 15px #1d1d1d, 4px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .table .thead-dark th{
+        background-color: #333;
+        border-color: #333;
+    }
+
+    .table td, .table th{
+        border-bottom: 1px solid #4a4a4a;
+    }
+
+    .section__pagination .page{
+        background: #272727;
+        box-shadow: -6px -6px 20px #1d1d1d, 6px 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .inner-page-banner {
+        background-color: #333;
+    }
+
+
+    .staff{
+        background-color: #212121;
+        box-shadow: -5px -5px 20px #212121, 5px 5px 20px #141414;
+    }
+
+    .staff-details .content-tab{
+        border: solid 1px #4a4a4a;
+    }
+
+    .staff-details .content-tab .nav-tabs .nav-link {
+        background-color: #212121;
+
+    }
+
+    .information-sidebar{
+        background-color: #212121;
+        box-shadow: -5px -5px 20px #212121, 5px 5px 20px #141414;
+    }
+
+    .section-faq #faq .card .card-header .btn-header-link.collapsed{
+        background-color: #212121;
+    }
+
+    .section-faq #faq .card .card-header .btn-header-link{
+        border: none;
+        background-color: #333;
+    }
+
+    #faq .card-body{
+        background-color: #333;
+        box-shadow: -5px -5px 20px #212121, 5px 5px 20px #141414;
+    }
+
+    .news-card{
+        background-color: #272727;
+        box-shadow: -5px -5px 20px #212121, 5px 5px 20px #141414;
+    }
+
+    .btn-text, .btn-text:link, .btn-text:visited{
+        background-color: #272727;
+        box-shadow: -7px -7px 20px 0px #0009,
+        -4px -4px 5px 0px #0009,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001,
+        inset 0px 0px 0px 0px #0009,
+        inset 0px 0px 0px 0px #0001,
+        inset 0px 0px 0px 0px #0009,
+        inset 0px 0px 0px 0px #0001;
+    }
+
+    
+}
+
+.site-theme-toggler:checked + .accessibility-contrast__link{
+    background-color: $color-primary-blue;
+}
+
+.site-font-plus:checked + .accessibility-font__link--plus{
+    text-decoration: underline;
+}
+
+.site-font-small:checked + .accessibility-font__link--small{
+    text-decoration: underline;
+}
+
+.site-font-normal:checked + .accessibility-font__link--normal{
+    text-decoration: underline;
+}

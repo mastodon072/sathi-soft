@@ -1,0 +1,138 @@
+/*!
+Theme Name: sathisoft
+Theme URI: http://underscores.me/
+Author: SathiSoft Pvt.Ltd.
+Author URI: https://sathisoft.com
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: sathisoft
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+sathisoft is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+// Import variables and mixins.
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+// @import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+// @import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/utilities";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/inner-banner";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+@import "components/social-medias";
+@import "components/accessibility";
+@import "components/cards";
+@import "components/navigation";
+@import "components/buttons";
+@import "components/staff-listing";
+@import "components/slider";
+@import "components/news-highlight";
+@import "components/content-tabs";
+@import "components/news-section-tab";
+@import "components/staff-messages";
+@import "components/content-slider";
+@import "components/testimonials";
+@import "components/faq";
+@import "components/form";
+@import "components/gallery";
+@import "components/counter-cards";
+@import "components/pagination";
+@import "components/tables";
+@import "components/image-thumbnail";
+@import "components/information-sidebar";
+@import "components/news-card";
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/home";
+@import "pages/news-archive";
+@import "pages/news-detail";
+@import "pages/contactus";
+@import "pages/dark-theme";
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@import "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Themes
+--------------------------------------------------------------*/
+@import "themes/extra";
+
+/* Accessibility
+--------------------------------------------- */
+// @import "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+// @import "utilities/alignments";

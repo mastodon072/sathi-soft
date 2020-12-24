@@ -1,0 +1,52 @@
+.container-card{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container-card .card-neo
+{
+  display: block;
+  width: 100%;
+  padding: 40px 30px;
+  background: $color-primary-white;
+  border-radius: 35px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1);
+
+    @include respond(tab-land){
+      padding: 16px 10px;
+      border-radius: 25px;
+  }
+}
+.container-card .card-neo:hover
+{
+  text-decoration: none;
+  box-shadow: inset -6px -6px 20px rgba(255,255,255,0.5), inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+.container-card .card-neo .imgBx
+{
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem;
+  color: $color-primary-blue;
+}
+
+.container-card .card-neo .contentBx
+{
+  position: relative;
+  margin-top: 15px;
+  text-align: center;
+}
+.container-card .card-neo .contentBx h2
+{
+  color: $color-primary-black;
+  font-family: 'sf_semibold';
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.container-card .card-neo:hover .imgBx,
+.container-card .card-neo:hover .contentBx
+{
+  transform: scale(0.98);
+}
